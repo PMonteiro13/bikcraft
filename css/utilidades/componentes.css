@@ -28,6 +28,20 @@
   color: var(--cor-2);
 }
 
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background-image: url("../../img/icones/seta.svg");
+  transition:  .2s;
+}
+
+.botao.seta:hover::after {
+  transform: translateX(4px);
+}
+
 .botao.secundario:hover {
   background: var(--cor-9);
 }
